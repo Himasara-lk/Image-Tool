@@ -49,7 +49,7 @@
  
  ## Deplaoy Button
  
- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/szbots/Image-Tool) 
+ [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hasindu-Himasara/Image-Tool) 
 
 
 ## Enjoy Your own Bot!
