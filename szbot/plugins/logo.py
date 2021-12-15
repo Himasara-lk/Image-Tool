@@ -16,10 +16,10 @@ import shutil
 repmark = InlineKeyboardMarkup(
       [
         [
-        InlineKeyboardButton(text="➕ Add me to your group ➕", url=f"http://t.me/szimagebot?startgroup=botstart") 
+        InlineKeyboardButton(text="➕ Add me to your group ➕", url=f"http://t.me/Hasindu_Image_Tool_BOT?startgroup=botstart") 
         ],
         [
-         InlineKeyboardButton(text="🗣️Join my updates ", url=f"https://t.me/szteambots") 
+         InlineKeyboardButton(text="🗣️Join my updates ", url=f"https://t.me/Altex_Updates") 
         ]
       ]      
     )
@@ -29,7 +29,7 @@ def nospace(s):
     s = re.sub(r"\s+", '%20', s)
 
     return s
-@sz.on_message(filters.command(["logo", f"logo@szimagebot"]))
+@sz.on_message(filters.command(["logo", f"@Hasindu_Image_Tool_BOT"]))
 async def make_logo(_, message):
     await AddUserToDatabase(_, message)
     FSub = await ForceSub(_, message)
@@ -38,21 +38,20 @@ async def make_logo(_, message):
     imgcaption = f"""
 ☘️** Logo Created Successfully**✅
 ◇───────────────◇
-🔥 **Created by** : @szimagebot
+🔥 **Created by** : @Hasindu_Image_Tool_BOT
 🌷 **Requestor** : {message.from_user.mention}
-⚡️ **Powered By **  : `【SZ™】`
+⚡️ **Powered By **  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
-©2021[【SZ™】 team ](https://t.me/szteambots) **All Right Reserved**⚠️️
 """
     if len(message.command) < 2:
             return await message.reply_text("Please give a text to make logo")
-    m = await message.reply_text("📸 Creating..")
+    m = await message.reply_text("⚙️ Generating Logo Please Wait....")
     name = message.text.split(None, 1)[1] if len(message.command) < 3 else message.text.split(None, 1)[1].replace(" ", "%20")
     api = get(f"https://api.singledevelopers.net/logo?name={name}")
     await m.edit("📤 Uploading ...")
     await sz.send_chat_action(message.chat.id, "upload_photo")
     img = Image.open(BytesIO(api.content))
-    logoname = "szlogo.png"
+    logoname = "HasinduImage.png"
     img.save(logoname, "png")
     await message.reply_photo(photo = logoname,
                               caption=imgcaption,
@@ -71,7 +70,7 @@ logomake = ["https://telegra.ph/file/7cd465d6609ea17141747.jpg",
             "https://telegra.ph/file/9cafdfbcdc5212b3138a9.jpg", 
             "https://telegra.ph/file/4e56b39faa4c03ca4079c.jpg",]
 
-@sz.on_message(filters.command(["blogo", f"blogo@szimagebot"]))
+@sz.on_message(filters.command(["blogo", f"blogo@Hasindu_Image_Tool_BOT"]))
 async def logomake(_, message: Message):
     await AddUserToDatabase(_, message)
     FSub = await ForceSub(_, message)
@@ -96,9 +95,8 @@ async def logomake(_, message: Message):
 ◇───────────────◇
 🔥 **Created by** : @szimagebot
 🌷 **Requestor** : {message.from_user.mention}
-⚡️ **Powered By **  : `【SZ™】`
+⚡️ **Powered By **  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
-©2021[【SZ™】 team ](https://t.me/szteambots) **All Right Reserved**⚠️️
 """
     img.save(szlogo, "png")
     await message.reply_photo(
@@ -112,7 +110,7 @@ alogomake = ["https://telegra.ph/file/7cd465d6609ea17141747.jpg",
             "https://telegra.ph/file/9cafdfbcdc5212b3138a9.jpg", 
             "https://telegra.ph/file/4e56b39faa4c03ca4079c.jpg",]
 
-@sz.on_message(filters.command(["glogo", f"glogo@szimagebot"]))
+@sz.on_message(filters.command(["glogo", f"glogo@Hasindu_Image_Tool_BOT"]))
 async def logomake(_, message: Message):      
     await AddUserToDatabase(_, message)
     FSub = await ForceSub(_, message)
@@ -140,9 +138,8 @@ async def logomake(_, message: Message):
 ◇───────────────◇
 🔥 **Created by** : @szimagebot
 🌷 **Requestor** : {message.from_user.mention}
-⚡️ **Powered By **  : `【SZ™】`
+⚡️ **Powered By **  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
-©2021[【SZ™】 team ](https://t.me/szteambots) **All Right Reserved**⚠️️
 """
     img.save(szlogo, "png")
     await message.reply_photo(
@@ -156,7 +153,7 @@ glogomake = ["https://telegra.ph/file/7cd465d6609ea17141747.jpg",
             "https://telegra.ph/file/9cafdfbcdc5212b3138a9.jpg", 
             "https://telegra.ph/file/4e56b39faa4c03ca4079c.jpg",]
 
-@sz.on_message(filters.command(["alogo", f"alogo@szimagebot"]))
+@sz.on_message(filters.command(["alogo", f"alogo@Hasindu_Image_Tool_BOT"]))
 async def logomake(_, message: Message):
     await AddUserToDatabase(_, message)
     FSub = await ForceSub(_, message)
@@ -183,7 +180,6 @@ async def logomake(_, message: Message):
 🌷 **Requestor** : {message.from_user.mention}
 ⚡️ **Powered By **  : `【SZ™】`
 ◇───────────────◇
-©2021[【SZ™】 team ](https://t.me/szteambots) **All Right Reserved**⚠️️
 """
     img.save(szlogo, "png")
     await message.reply_photo(
