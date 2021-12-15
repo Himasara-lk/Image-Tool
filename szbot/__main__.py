@@ -25,6 +25,10 @@ from szbot.helpers.humanbytes import humanbytes
 
 START_IMG = (
     "https://telegra.ph/file/d5f5e246d24e918938200.jpg",
+    "https://telegra.ph/file/905a6f23a27cb1f2c035d.jpg",
+    "https://telegra.ph/file/ab88cc9c4fa47ffd19b72.jpg",
+    "http://telegra.ph//file/ed37f1ca87e54ff52c10f.png",
+    "http://telegra.ph//file/fd09ba8d7880bdff226cb.png",
 )
 
 @sz.on_message(filters.private & filters.incoming & filters.command(["start"]))
