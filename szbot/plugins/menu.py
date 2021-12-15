@@ -15,11 +15,11 @@ START_BTN = InlineKeyboardMarkup(
                     InlineKeyboardButton("🆘️ Help 🆘️", callback_data="helpmenu")
                 ],
                 [
-                    InlineKeyboardButton("🗣Updates", url="https://t.me/szteambots"),
-                    InlineKeyboardButton("👥Support", url="https://t.me/slbotzone")
+                    InlineKeyboardButton("🗣Updates", url="https://t.me/Altex_Updates"),
+                    InlineKeyboardButton("👥Support", url="https://t.me/SL_YouTubers_TG_Group")
                 ],
                 [
-                    InlineKeyboardButton("➕Add me to your group ➕", url="http://t.me/szimagebot?startgroup=botstart") 
+                    InlineKeyboardButton("➕Add me to your group ➕", url="http://t.me/Hasindu_Image_Tool_BOT?startgroup=botstart") 
                 ]
             ]
         )
@@ -30,13 +30,13 @@ GROUP_BTN = InlineKeyboardMarkup(
                     InlineKeyboardButton("🆘️ Help 🆘️", callback_data="helpmenu")
                 ],
                 [
-                    InlineKeyboardButton("🗣️Update channel", url="https://t.me/szteambots")
+                    InlineKeyboardButton("🗣️Update channel", url="https://t.me/Altex_Updates")
                 ]
             ]
         )
 
 HELP_TEXT = f"""
-**🆘️This is @szimagebot Help Menu 🆘️**
+**🆘️This is @Hasindu_Image_Tool_BOT Help Menu 🆘️**
 
 ⚠️️Read this before useing me ...
 
@@ -47,8 +47,6 @@ HELP_TEXT = f"""
 ♞/carbon reply to text
 ♞/text reply to text
 ♞/rlogo logo name
-
-©2021[<sz/> Team ](https://t.me/szteambots)✌️
 """
 
 BACKTOHOME = InlineKeyboardMarkup(
@@ -114,7 +112,7 @@ Then You Can Use Our Bot For limited  To Create logo 💫😊**
 CLOSE_BTN =  InlineKeyboardMarkup(
         [
         [
-        InlineKeyboardButton(text="🗣️<sz/>team bot's", url=f"https://t.me/szteambots")    
+        InlineKeyboardButton(text="ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>", url=f"https://t.me/HASINDU_HIMASARA")    
         ]
         ]      
     )
@@ -124,7 +122,7 @@ FSUB_TEXT = " **You cant use me untill subscribe our updates channel** ☹️\n\
 FSUB_BTN = InlineKeyboardMarkup(
         [
         [
-        InlineKeyboardButton(text="🗣 Join our update Channel ", url=f"https://t.me/szteambots") 
+        InlineKeyboardButton(text="🗣 Join our update Channel ", url=f"https://t.me/SL_YouTubers_TG_Group") 
         ]
         ]      
     )
