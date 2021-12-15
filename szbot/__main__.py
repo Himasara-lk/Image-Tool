@@ -24,16 +24,7 @@ from szbot.helpers.humanbytes import humanbytes
 
 
 START_IMG = (
-    "http://telegra.ph//file/6446461de37e64e66fa23.png",
-    "http://telegra.ph//file/6f8b5760d0d3b6b2d13d6.png",
-    "http://telegra.ph//file/9aaa3d6182bfa60c75719.png",
-    "http://telegra.ph//file/eb9d3ceaddb80c8f54e0c.png",
-    "http://telegra.ph//file/d6961d5ee000d19673aea.png",
-    "http://telegra.ph//file/b84bdb7d085786752051d.png",
-    "http://telegra.ph//file/330184a851ecf88b899a9.png",
-    "http://telegra.ph//file/01c927f6ba69b0ee0e200.png",
-    "http://telegra.ph//file/9b4ce9e507c491af3cecf.png",
-    "http://telegra.ph//file/b6a00b71aee0610f13ac4.png",
+    "https://telegra.ph/file/d5f5e246d24e918938200.jpg",
 )
 
 @sz.on_message(filters.private & filters.incoming & filters.command(["start"]))
@@ -56,7 +47,7 @@ async def start(bot, update):
 
 📊 <b>Users</b> : {total_users}
 
-©2021<a href=\"https://t.me/szteambots\"> sz Team Bots <sz/>✌️</a> 💐
+©2021<a href=\"https://t.me/HASINDU_HIMASARA\"> ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </></a> 💐
 """
     await update.reply_photo(
                     photo=(random.choice(START_IMG)),
@@ -65,7 +56,7 @@ async def start(bot, update):
                     parse_mode="Html")
 
     
-@sz.on_message(filters.command(["start", f"start@szimagebot"]) & ~filters.private & ~filters.channel)
+@sz.on_message(filters.command(["start", f"start@Hasindu_Image_Tool_BOT"]) & ~filters.private & ~filters.channel)
 async def gstart(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
@@ -77,7 +68,7 @@ async def gstart(bot, update):
                     parse_mode="Html",
                     disable_web_page_preview=True)
 
-@sz.on_message(filters.command(["help", f"help@szimagebot"]))
+@sz.on_message(filters.command(["help", f"help@Hasindu_Image_Tool_BOT"]))
 async def help(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
@@ -89,7 +80,7 @@ async def help(bot, update):
         disable_web_page_preview=True,
         reply_markup=CLOSE_BTN) 
 
-@sz.on_message(filters.command(["about", f"about@szimagebot"]))
+@sz.on_message(filters.command(["about", f"about@Hasindu_Image_Tool_BOT"]))
 async def about(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
@@ -122,7 +113,7 @@ async def show_status_count(_, bot: Message):
         quote=True
     )       
     
-@sz.on_message(filters.command(["ping", f"ping@szimagebot"]))
+@sz.on_message(filters.command(["ping", f"ping@Hasindu_Image_Tool_BOT"]))
 async def ping(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
