@@ -64,9 +64,8 @@ World First Time With Image Editor tools**🌟
 🔥You Can Create Many Type Of **Logo Design**
 For your Dp & More Usage , Remove Background  
 With full **Advance image Editor Features** Included 
-This Bot Based on @MalithRukshan **Logo Api Key**
+This Bot Based on MalithRukshan **Logo Api Key**
 & **TroJanzHex Image editor** 
-Speacial credits gone **Dᴀᴍᴀɴᴛʜᴀ Jᴀsɪɴɢʜᴇ & <sz/> Team ** ...🤗
 
 💁‍♂**Logo Types & Image editor Features** : 
 
