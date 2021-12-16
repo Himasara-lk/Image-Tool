@@ -42,19 +42,19 @@ async def is_app_admin(chat, user):
 TEXT=f"""🗑️** Background removed Successfully**✅
 ◇───────────────◇
 🔥 **Removed  by** : [ 🎨 Imᥲgᥱ Tooᥣs Bot](https://t.me/szimagebot)
-⚡️ **Powered By**  : `【SZ™】`
+⚡️ **Powered By**  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
-©2021[【SZ™】 team ](https://t.me/szteambots) **All Right Reserved**⚠️️
+✌ ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>(https://t.me/HASINDU_HIMASARA)
 """    
     
     
 BUTTONS = InlineKeyboardMarkup(	
       [	
         [	
-        InlineKeyboardButton(text="➕ Add me to your group ➕", url=f"http://t.me/szimagebot?startgroup=botstart") 	
+        InlineKeyboardButton(text="➕ Add me to your group ➕", url=f"http://t.me/Hasindu_Image_Tool_BOT?startgroup=botstart") 	
         ],	
         [	
-         InlineKeyboardButton(text="🗣️Join my updates ", url=f"https://t.me/sszteambots") 	
+         InlineKeyboardButton(text="🗣️Join my updates ", url=f"https://t.me/Altex_Updates") 	
         ]	
       ]      	
     )    
@@ -62,7 +62,7 @@ BUTTONS = InlineKeyboardMarkup(
 
 @sz.on(events.NewMessage(pattern='^/rmbg'))
 async def _(event):
-    HELP_STR = "use `/rmbg` as reply to a media.\nJoin my updates channel @sl_bot_zone "
+    HELP_STR = "use `/rmbg` as reply to a media.\nJoin my updates channel https://t.me/Altex_Updates "
     if event.fwd_from:
         return
     if event.is_group:
