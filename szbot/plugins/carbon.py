@@ -14,10 +14,10 @@ async def make_carbon(code):
 BUTTON = InlineKeyboardMarkup(
       [
         [
-        InlineKeyboardButton(text="➕ Add me to your group ➕", url=f"http://t.me/szimagebot?startgroup=botstart") 
+        InlineKeyboardButton(text="➕ Add me to your group ➕", url=f"http://t.me/Hasindu_Image_Tool_BOT?startgroup=botstart") 
         ],
         [
-         InlineKeyboardButton(text="🗣️Join my updates", url=f"https://t.me/szteambots") 
+         InlineKeyboardButton(text="🗣️Join my updates", url=f"https://t.me/Altex_Updates") 
         ]
       ]      
     )
@@ -25,14 +25,13 @@ BUTTON = InlineKeyboardMarkup(
 TEXT=f"""
 ☘️ **carbon Created Successfully** ✅
 ◇───────────────◇
-🔥 **Created by** : [🎨 Imᥲgᥱ Tooᥣs Bot](https://t.me/szimagebot)
-⚡️ **Powered By**  : `【SZ™】´
+🔥 **Created by** : [🎨 Imᥲgᥱ Tooᥣs Bot](https://t.me/Hasindu_Image_Tool_BOT)
+⚡️ **Powered By**  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>´
 ◇───────────────◇
-©2021【SZ™】 team  **All Right Reserved**⚠️️
 """
 
 
-@sz.on_message(filters.command(["carbon", f"carbon@szimagebot"]))
+@sz.on_message(filters.command(["carbon", f"carbon@Hasindu_Image_Tool_BOT"]))
 async def carbon_func(client, message):
     FSub = await ForceSub(client, message)
     if FSub == 400:
