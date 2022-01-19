@@ -92,7 +92,6 @@ async def logogen(client, message):
 ☘️**Random Logo Created Successfully**✅
 ◇───────────────◇
 🔥 **Created by** : @Hasindu_Image_Tool_BOT
-🌷 **Requestor** : {message.from_user.mention}
 ◇───────────────◇
 
  [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
