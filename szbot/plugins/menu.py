@@ -11,12 +11,12 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 START_BTN = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🙇 About 🙇", callback_data="aboutmenu"),
-                    InlineKeyboardButton("🆘️ Help 🆘️", callback_data="helpmenu")
+                    InlineKeyboardButton("🌷 About 🌷", callback_data="aboutmenu"),
+                    InlineKeyboardButton(" 🌸Help 🌸", callback_data="helpmenu")
                 ],
                 [
-                    InlineKeyboardButton("🗣 Updates", url="https://t.me/Altex_Updates"),
-                    InlineKeyboardButton("👥 Support", url="https://t.me/SLStockMusic")
+                    InlineKeyboardButton("☘ Updates ☘", url="https://t.me/Altex_Updates"),
+                    InlineKeyboardButton("🌸 Support 🌸", url="https://t.me/SLStockMusic")
                 ],
                 [
                     InlineKeyboardButton("➕Add me to your group ➕", url="http://t.me/Hasindu_Image_Tool_BOT?startgroup=botstart") 
@@ -27,16 +27,16 @@ START_BTN = InlineKeyboardMarkup(
 GROUP_BTN = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🆘️ Help 🆘️", callback_data="helpmenu")
+                    InlineKeyboardButton("🌷 Help 🌷", callback_data="helpmenu")
                 ],
                 [
-                    InlineKeyboardButton("🗣️Update channel", url="https://t.me/Altex_Updates")
+                    InlineKeyboardButton("🙋‍♂️ Update channel", url="https://t.me/Altex_Updates")
                 ]
             ]
         )
 
 HELP_TEXT = f"""
-**🆘️This is @Hasindu_Image_Tool_BOT Help Menu 🆘️**
+**🌷 This is @Hasindu_Image_Tool_BOT Help Menu**
 
 ⚠️️Read this before useing me ...
 
@@ -85,7 +85,7 @@ FSUB_TEXT = " **You cant use me untill subscribe our updates channel** ☹️\n\
 FSUB_BTN = InlineKeyboardMarkup(
         [
         [
-        InlineKeyboardButton(text="🗣 Join our update Channel ", url=f"https://t.me/SL_YouTubers_TG_Group") 
+        InlineKeyboardButton(text="🗣 Join our update Channel ", url=f"https://t.me/Altex_Updates") 
         ]
         ]      
     )
