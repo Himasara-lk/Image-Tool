@@ -40,11 +40,13 @@ async def is_app_admin(chat, user):
         return True
 
 TEXT=f"""🗑️** Background removed Successfully**✅
+
 ◇───────────────◇
-🔥 **Removed  by** : [ 🎨 Imᥲgᥱ Tooᥣs Bot](https://t.me/szimagebot)
+🔥 **Removed  by** : [🎨 Image Tool Bot](@Hasindu_Image_Tool_BOT)
 ⚡️ **Powered By**  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
-✌ ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>(https://t.me/HASINDU_HIMASARA)
+ 
+ [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """    
     
     
