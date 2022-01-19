@@ -24,10 +24,10 @@ from szbot.helpers.humanbytes import humanbytes
 
 
 START_IMG = (
-    "CAACAgIAAxkBAAEG3bdh55t4d3pUEab1HPZc4XcE1oiRvAACTAEAAjDUnRH33m9fN4M5HCME",
-    "CAACAgIAAxkBAAEG3bFh55r7IqWuTnIaPCrbP5IZFB3_UwACSgEAAjDUnRHtmqasW02BTSME",
-    "CAACAgIAAxkBAAEG3b1h55u82vPuciCWR_XGmkDJybykIgACTwEAAjDUnRFq618dJE0QOSME",
+    "https://telegra.ph/file/865f65000ace14eeb7a50.jpg",
 )
+
+  
 
 @sz.on_message(filters.private & filters.incoming & filters.command(["start"]))
 async def start(bot, update):
