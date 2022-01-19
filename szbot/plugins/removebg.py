@@ -43,7 +43,6 @@ TEXT=f"""🗑️** Background removed Successfully**✅
 
 ◇───────────────◇
 🔥 **Removed  by** : [🎨 Image Tool Bot](@Hasindu_Image_Tool_BOT)
-⚡️ **Powered By**  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
  
  [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
