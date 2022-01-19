@@ -23,12 +23,10 @@ from szbot.helpers.database.access_db import db
 from szbot.helpers.humanbytes import humanbytes
 
 
-START_IMG = (
-    "https://telegra.ph/file/d5f5e246d24e918938200.jpg",
-    "https://telegra.ph/file/905a6f23a27cb1f2c035d.jpg",
-    "https://telegra.ph/file/ab88cc9c4fa47ffd19b72.jpg",
-    "http://telegra.ph//file/ed37f1ca87e54ff52c10f.png",
-    "http://telegra.ph//file/fd09ba8d7880bdff226cb.png",
+START STICKER = (
+    "CAACAgIAAxkBAAEG3bdh55t4d3pUEab1HPZc4XcE1oiRvAACTAEAAjDUnRH33m9fN4M5HCME",
+    "CAACAgIAAxkBAAEG3bFh55r7IqWuTnIaPCrbP5IZFB3_UwACSgEAAjDUnRHtmqasW02BTSME",
+    "CAACAgIAAxkBAAEG3b1h55u82vPuciCWR_XGmkDJybykIgACTwEAAjDUnRFq618dJE0QOSME",
 )
 
 @sz.on_message(filters.private & filters.incoming & filters.command(["start"]))
@@ -44,14 +42,8 @@ async def start(bot, update):
 🙋‍♂️ I am  🎨<b>Imagᥱ Tooᥣs Bot</b>
 <b>I specialize for logo design  Services with Amazing logo  Creator Platform & more tools</b>💐
                                 
-🌶 <b>Powered by</b>:
-◈ <code>Single Developers Logo Creator API</code>
-◈ <code>TroJanzHex Image editor</code>
-◈ <code>Dᴀᴍᴀɴᴛʜᴀ Jᴀsɪɴɢʜᴇ Random Logo Api</code>
-
 📊 <b>Users</b> : {total_users}
 
-©2021<a href=\"https://t.me/HASINDU_HIMASARA\"> ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </></a> 💐
 """
     await update.reply_photo(
                     photo=(random.choice(START_IMG)),
@@ -112,7 +104,7 @@ async def show_status_count(_, bot: Message):
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     await bot.reply_text(
-        text=f"**💽 Tᴏᴛᴇʟ Dɪꜱᴋ Sᴘᴀᴄᴇ:** {total} \n**💿 Uꜱᴇᴅ Sᴘᴀᴄᴇ:** `{used}({disk_usage}%)` \n**📊 Fʀᴇᴇ Sᴘᴀᴄᴇ:** `{free}` \n**Cᴘᴜ Uꜱᴀɢᴇ:** `{cpu_usage}%` \n**Rᴀᴍ Uꜱᴀɢᴇ:** `{ram_usage}%` \n\n**Tᴏᴛᴀʟ Uꜱᴇʀꜱ 👀:** `{total_users}`\n\n**@szimagebot 🤖**",
+        text=f"**💽 Tᴏᴛᴇʟ Dɪꜱᴋ Sᴘᴀᴄᴇ:** {total} \n**💿 Uꜱᴇᴅ Sᴘᴀᴄᴇ:** `{used}({disk_usage}%)` \n**📊 Fʀᴇᴇ Sᴘᴀᴄᴇ:** `{free}` \n**Cᴘᴜ Uꜱᴀɢᴇ:** `{cpu_usage}%` \n**Rᴀᴍ Uꜱᴀɢᴇ:** `{ram_usage}%` \n\n**Tᴏᴛᴀʟ Uꜱᴇʀꜱ 👀:** `{total_users}`\n\n**@Hasindu_Image_Tool_BOT**",
         parse_mode="Markdown",
         quote=True
     )       
