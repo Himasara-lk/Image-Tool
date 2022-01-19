@@ -23,7 +23,7 @@ from szbot.helpers.database.access_db import db
 from szbot.helpers.humanbytes import humanbytes
 
 
-START STICKER = (
+START_IMG = (
     "CAACAgIAAxkBAAEG3bdh55t4d3pUEab1HPZc4XcE1oiRvAACTAEAAjDUnRH33m9fN4M5HCME",
     "CAACAgIAAxkBAAEG3bFh55r7IqWuTnIaPCrbP5IZFB3_UwACSgEAAjDUnRHtmqasW02BTSME",
     "CAACAgIAAxkBAAEG3b1h55u82vPuciCWR_XGmkDJybykIgACTwEAAjDUnRFq618dJE0QOSME",
@@ -45,12 +45,11 @@ async def start(bot, update):
 📊 <b>Users</b> : {total_users}
 
 """
-    await update.reply_sticker(
-                    sticker=(random.choice(START STICKER)),
+   await update.reply_photo(
+                    photo=(random.choice(START_IMG)),
                     reply_markup=START_BTN,
                     caption=START_TEXT,
                     parse_mode="Html")
-
     
 @sz.on_message(filters.command(["start", f"start@Hasindu_Image_Tool_BOT"]) & ~filters.private & ~filters.channel)
 async def gstart(bot, update):
