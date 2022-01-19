@@ -92,8 +92,10 @@ async def logogen(client, message):
 ☘️**Random Logo Created Successfully**✅
 ◇───────────────◇
 🔥 **Created by** : @Hasindu_Image_Tool_BOT
-⚡️ **Powered By **  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
+🌷 **Requestor** : {message.from_user.mention}
 ◇───────────────◇
+
+ [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """
     created = "logo.jpg"
     await client.send_photo(message.chat.id, photo = created, caption = imgcaption, reply_markup = repmark )
