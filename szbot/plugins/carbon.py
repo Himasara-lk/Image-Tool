@@ -25,9 +25,11 @@ BUTTON = InlineKeyboardMarkup(
 TEXT=f"""
 ☘️ **carbon Created Successfully** ✅
 ◇───────────────◇
-🔥 **Created by** : [🎨 Imᥲgᥱ Tooᥣs Bot](https://t.me/Hasindu_Image_Tool_BOT)
-⚡️ **Powered By**  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>´
+🔥 **Removed  by** : [🎨 Image Tool Bot](@Hasindu_Image_Tool_BOT)
+⚡️ **Powered By**  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
+ 
+ [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """
 
 
