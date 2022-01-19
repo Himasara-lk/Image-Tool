@@ -45,11 +45,18 @@ async def start(bot, update):
     total_users = await db.total_users_count()
     START_TEXT = f"""
 👋 Hello {update.from_user.mention} , 🤗
+
 🙋‍♂️ I am  🎨<b>Imagᥱ Tooᥣs Bot</b>
 <b>I specialize for logo design  Services with Amazing logo  Creator Platform & more tools</b>💐
                                 
+🌶 <b>Powered by</b>:
+◈ <code>Single Developers Logo Creator API</code>
+◈ <code>TroJanzHex Image editor</code>
+◈ <code>Dᴀᴍᴀɴᴛʜᴀ Jᴀsɪɴɢʜᴇ Random Logo Api</code>
+
 📊 <b>Users</b> : {total_users}
 
+©2021<a href=\"https://t.me/szteambots\"> sz Team Bots <sz/>✌️</a> 💐
 """
     await update.reply_photo(
                     photo=(random.choice(START_IMG)),
@@ -58,7 +65,7 @@ async def start(bot, update):
                     parse_mode="Html")
 
     
-@sz.on_message(filters.command(["start", f"start@Hasindu_Image_Tool_BOT"]) & ~filters.private & ~filters.channel)
+@sz.on_message(filters.command(["start", f"start@szimagebot"]) & ~filters.private & ~filters.channel)
 async def gstart(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
@@ -70,7 +77,7 @@ async def gstart(bot, update):
                     parse_mode="Html",
                     disable_web_page_preview=True)
 
-@sz.on_message(filters.command(["help", f"help@Hasindu_Image_Tool_BOT"]))
+@sz.on_message(filters.command(["help", f"help@szimagebot"]))
 async def help(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
@@ -82,7 +89,7 @@ async def help(bot, update):
         disable_web_page_preview=True,
         reply_markup=CLOSE_BTN) 
 
-@sz.on_message(filters.command(["about", f"about@Hasindu_Image_Tool_BOT"]))
+@sz.on_message(filters.command(["about", f"about@szimagebot"]))
 async def about(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
@@ -110,12 +117,12 @@ async def show_status_count(_, bot: Message):
     disk_usage = psutil.disk_usage('/').percent
     total_users = await db.total_users_count()
     await bot.reply_text(
-        text=f"**💽 Tᴏᴛᴇʟ Dɪꜱᴋ Sᴘᴀᴄᴇ:** {total} \n**💿 Uꜱᴇᴅ Sᴘᴀᴄᴇ:** `{used}({disk_usage}%)` \n**📊 Fʀᴇᴇ Sᴘᴀᴄᴇ:** `{free}` \n**Cᴘᴜ Uꜱᴀɢᴇ:** `{cpu_usage}%` \n**Rᴀᴍ Uꜱᴀɢᴇ:** `{ram_usage}%` \n\n**Tᴏᴛᴀʟ Uꜱᴇʀꜱ 👀:** `{total_users}`\n\n**@Hasindu_Image_Tool_BOT**",
+        text=f"**💽 Tᴏᴛᴇʟ Dɪꜱᴋ Sᴘᴀᴄᴇ:** {total} \n**💿 Uꜱᴇᴅ Sᴘᴀᴄᴇ:** `{used}({disk_usage}%)` \n**📊 Fʀᴇᴇ Sᴘᴀᴄᴇ:** `{free}` \n**Cᴘᴜ Uꜱᴀɢᴇ:** `{cpu_usage}%` \n**Rᴀᴍ Uꜱᴀɢᴇ:** `{ram_usage}%` \n\n**Tᴏᴛᴀʟ Uꜱᴇʀꜱ 👀:** `{total_users}`\n\n**@Hasindu_Image_Tool_BOT 🤖**",
         parse_mode="Markdown",
         quote=True
     )       
     
-@sz.on_message(filters.command(["ping", f"ping@Hasindu_Image_Tool_BOT"]))
+@sz.on_message(filters.command(["ping", f"ping@szimagebot"]))
 async def ping(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
