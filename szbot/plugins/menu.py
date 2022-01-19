@@ -15,8 +15,8 @@ START_BTN = InlineKeyboardMarkup(
                     InlineKeyboardButton("🆘️ Help 🆘️", callback_data="helpmenu")
                 ],
                 [
-                    InlineKeyboardButton("🗣Updates", url="https://t.me/Altex_Updates"),
-                    InlineKeyboardButton("👥Support", url="https://t.me/SL_YouTubers_TG_Group")
+                    InlineKeyboardButton("🗣 Updates", url="https://t.me/Altex_Updates"),
+                    InlineKeyboardButton("👥 Support", url="https://t.me/SLStockMusic")
                 ],
                 [
                     InlineKeyboardButton("➕Add me to your group ➕", url="http://t.me/Hasindu_Image_Tool_BOT?startgroup=botstart") 
@@ -58,23 +58,6 @@ BACKTOHOME = InlineKeyboardMarkup(
         )
 
 ABOUT_TEXT = """
-🌟**Logo Design Platform in Telegram , 
-World First Time With Image Editor tools**🌟
-
-🔥You Can Create Many Type Of **Logo Design**
-For your Dp & More Usage , Remove Background  
-With full **Advance image Editor Features** Included 
-This Bot Based on MalithRukshan **Logo Api Key**
-& **TroJanzHex Image editor** 
-
-💁‍♂**Logo Types & Image editor Features** : 
-
-🍀Api Based logo Creator
-💐Rando logo Creator 
-♣️ Carbon maker
-🍃Background Remover
-✍Text art Genarator 80+ styles
-⭕️Image editor 
            💡Bright 
            🖼 Mixed 
            🔘 Black & White 
@@ -86,26 +69,7 @@ This Bot Based on MalithRukshan **Logo Api Key**
            🌀 Contrast 
            🌇 Sepia 
            ✏️ Pencil 
-           ⛄️ Cartoon 
-           ✨ Invert 
-           🖲 Glitch
-           🗑 Remove Background
-◈──────────────────◈
-⚠️ **Please Note** ⚠️
-
-✍**We have added force sub to image bot  
-because of some users spaming our bot 
-by sending command  😑 So now bot works
-only for people who are subscribed our channel 😒 
-So If you send /start ,bot will reply you
-a message to Subscribe Our Updates Channel , 
-So If you recieved that message simply
-go the given inline button andJoin our Channel Then /start again 😊
-Then You Can Use Our Bot For limited  To Create logo 💫😊**
-
-🎁 `Thank you all for following this´♥️
-◈──────────────────◈
-💐Try it Now , Enjoy Unlimited logo creator !!!  💐
+           ⛄️ Cartoon
 """
 
 CLOSE_BTN =  InlineKeyboardMarkup(
