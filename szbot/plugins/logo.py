@@ -50,10 +50,10 @@ async def make_logo(_, message):
     m = await message.reply_text("⚙️ Generating Logo Please Wait....")
     name = message.text.split(None, 1)[1] if len(message.command) < 3 else message.text.split(None, 1)[1].replace(" ", "%20")
     api = get(f"https://api.singledevelopers.net/logo?name={name}")
-    await m.edit("📤 Uploading ...")
+    await m.edit("ρℓєαѕє ωαιт....")
     await sz.send_chat_action(message.chat.id, "upload_photo")
     img = Image.open(BytesIO(api.content))
-    logoname = "HasinduImage.png"
+    logoname = "Logo.png"
     img.save(logoname, "png")
     await message.reply_photo(photo = logoname,
                               caption=imgcaption,
@@ -95,14 +95,16 @@ async def logomake(_, message: Message):
     imgcaption = f"""
 ☘️** Logo Created Successfully**✅
 ◇───────────────◇
-🔥 **Created by** : @szimagebot
+🔥 **Created by** : @Hasindu_Image_Tool_BOT
 🌷 **Requestor** : {message.from_user.mention}
-⚡️ **Powered By **  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
+
+ [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """
+
     img.save(szlogo, "png")
     await message.reply_photo(
-                photo=f"szimg.png",
+                photo=f"image.png",
                 caption= imgcaption,
             )
     if os.path.exists(szlogo):
@@ -138,14 +140,15 @@ async def logomake(_, message: Message):
     imgcaption=f"""
 ☘️** Logo Created Successfully**✅
 ◇───────────────◇
-🔥 **Created by** : @szimagebot
+🔥 **Created by** : @Hasindu_Image_Tool_BOT
 🌷 **Requestor** : {message.from_user.mention}
-⚡️ **Powered By **  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
+
+ [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """
     img.save(szlogo, "png")
     await message.reply_photo(
-                photo=f"szimg.png",
+                photo=f"image.png",
                 caption= imgcaption,
             )
     if os.path.exists(szlogo):
@@ -178,14 +181,15 @@ async def logomake(_, message: Message):
     imgcaption=f"""
 ☘️** Logo Created Successfully**✅
 ◇───────────────◇
-🔥 **Created by** : @szimagebot
+🔥 **Created by** : @Hasindu_Image_Tool_BOT
 🌷 **Requestor** : {message.from_user.mention}
-⚡️ **Powered By **  : `【SZ™】`
 ◇───────────────◇
+
+ [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """
     img.save(szlogo, "png")
     await message.reply_photo(
-                photo=f"szimg.png",
+                photo=f"image.png",
                 caption=imgcaption,
             )
     if os.path.exists(szlogo):
