@@ -115,7 +115,7 @@ async def _(event):
         await gg.delete()
     else:
         await gg.edit(
-            "remove.bg API returned Errors. Please report to @slbotzone\n`{}` ".format(
+            "remove.bg API returned Errors. Please report to @SLStockMusic\n`{}` ".format(
                 output_file_name.content.decode("UTF-8")
             )
         )
