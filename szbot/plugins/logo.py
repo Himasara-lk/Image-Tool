@@ -37,11 +37,13 @@ async def make_logo(_, message):
         return
     imgcaption = f"""
 ☘️** Logo Created Successfully**✅
+
 ◇───────────────◇
 🔥 **Created by** : @Hasindu_Image_Tool_BOT
 🌷 **Requestor** : {message.from_user.mention}
-⚡️ **Powered By **  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
 ◇───────────────◇
+
+ [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """
     if len(message.command) < 2:
             return await message.reply_text("Please give a text to make logo")
