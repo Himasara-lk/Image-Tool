@@ -12,11 +12,11 @@ START_BTN = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("🌷 About 🌷", callback_data="aboutmenu"),
-                    InlineKeyboardButton(" 🌸Help 🌸", callback_data="helpmenu")
+                    InlineKeyboardButton("🌷 Help 🌷", callback_data="helpmenu")
                 ],
                 [
-                    InlineKeyboardButton("☘ Updates ☘", url="https://t.me/Altex_Updates"),
-                    InlineKeyboardButton("🌸 Support 🌸", url="https://t.me/SLStockMusic")
+                    InlineKeyboardButton("🌷 Updates 🌷", url="https://t.me/Altex_Updates"),
+                    InlineKeyboardButton("🌷 Support 🌷", url="https://t.me/SLStockMusic")
                 ],
                 [
                     InlineKeyboardButton("➕Add me to your group ➕", url="http://t.me/Hasindu_Image_Tool_BOT?startgroup=botstart") 
