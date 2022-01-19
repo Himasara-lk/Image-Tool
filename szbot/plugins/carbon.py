@@ -25,11 +25,11 @@ BUTTON = InlineKeyboardMarkup(
 TEXT=f"""
 ☘️ **carbon Created Successfully** ✅
 ◇───────────────◇
-🔥 **Removed  by** : [🎨 Image Tool Bot](@Hasindu_Image_Tool_BOT)
-⚡️ **Powered By**  : `ʜᴀꜱɪɴᴅᴜ ʜɪᴍᴀꜱᴀʀᴀ </>`
+🔥 **Created by** : @Hasindu_Image_Tool_BOT
+🌷 **Requestor** : {message.from_user.mention}
 ◇───────────────◇
- 
- [🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
+
+[🎧 Støck Mυѕιc 🎧](https://t.me/SLStockMusic)
 """
 
 
@@ -44,7 +44,7 @@ async def carbon_func(client, message):
         return await message.reply_text("Reply to a text message.")
     m = await message.reply_text("Preparing")
     carbon = await make_carbon(message.reply_to_message.text)
-    await m.edit("Uploading")
+    await m.edit("𝙒𝙖𝙞𝙩...")
     await client.send_photo(message.chat.id, carbon,caption=TEXT,reply_markup= BUTTON)
     await m.delete()
     carbon.close()
