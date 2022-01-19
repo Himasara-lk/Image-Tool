@@ -24,7 +24,9 @@ from szbot.helpers.humanbytes import humanbytes
 
 
 START_IMG = (
-    "https://telegra.ph/file/bb356dbd90954e4ada001.jpg",
+    "https://telegra.ph/file/bf658fab82ed28a6ef4ce.jpg",
+    "https://telegra.ph/file/3e98281f3f50837cff0f1.jpg",
+    "https://telegra.ph/file/35cde9a393cee20517159.jpg",
 )
 
 @sz.on_message(filters.private & filters.incoming & filters.command(["start"]))
@@ -37,8 +39,8 @@ async def start(bot, update):
     START_TEXT = f"""
 👋 Hello {update.from_user.mention} , 🤗
 
-🙋‍♂️ I am 🎨Iмαge Tøøł Bøт
-💐 I ѕρєcιαƖιzє fσя Ɩσgσ ɗєѕιgη  Sєяνιcєѕ ωιтн Aмαzιηg Ɩσgσ  Ƈяєαтσя ƤƖαтfσям & мσяє тσσƖѕ
+🙋‍♂️ *I am 🎨Iмαge Tøøł Bøт*
+💐 *I ѕρєcιαƖιzє fσя Ɩσgσ ɗєѕιgη  Sєяνιcєѕ ωιтн Aмαzιηg Ɩσgσ  Ƈяєαтσя ƤƖαтfσям & мσяє тσσƖѕ*
 
 📊 <b>Users</b> : {total_users}
 
