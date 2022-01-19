@@ -24,16 +24,7 @@ from szbot.helpers.humanbytes import humanbytes
 
 
 START_IMG = (
-    "http://telegra.ph//file/6446461de37e64e66fa23.png",
-    "http://telegra.ph//file/6f8b5760d0d3b6b2d13d6.png",
-    "http://telegra.ph//file/9aaa3d6182bfa60c75719.png",
-    "http://telegra.ph//file/eb9d3ceaddb80c8f54e0c.png",
-    "http://telegra.ph//file/d6961d5ee000d19673aea.png",
-    "http://telegra.ph//file/b84bdb7d085786752051d.png",
-    "http://telegra.ph//file/330184a851ecf88b899a9.png",
-    "http://telegra.ph//file/01c927f6ba69b0ee0e200.png",
-    "http://telegra.ph//file/9b4ce9e507c491af3cecf.png",
-    "http://telegra.ph//file/b6a00b71aee0610f13ac4.png",
+    "https://telegra.ph/file/bb356dbd90954e4ada001.jpg",
 )
 
 @sz.on_message(filters.private & filters.incoming & filters.command(["start"]))
@@ -46,17 +37,11 @@ async def start(bot, update):
     START_TEXT = f"""
 👋 Hello {update.from_user.mention} , 🤗
 
-🙋‍♂️ I am  🎨<b>Imagᥱ Tooᥣs Bot</b>
-<b>I specialize for logo design  Services with Amazing logo  Creator Platform & more tools</b>💐
-                                
-🌶 <b>Powered by</b>:
-◈ <code>Single Developers Logo Creator API</code>
-◈ <code>TroJanzHex Image editor</code>
-◈ <code>Dᴀᴍᴀɴᴛʜᴀ Jᴀsɪɴɢʜᴇ Random Logo Api</code>
+🙋‍♂️ I am 🎨Iмαge Tøøł Bøт
+💐 I ѕρєcιαƖιzє fσя Ɩσgσ ɗєѕιgη  Sєяνιcєѕ ωιтн Aмαzιηg Ɩσgσ  Ƈяєαтσя ƤƖαтfσям & мσяє тσσƖѕ
 
 📊 <b>Users</b> : {total_users}
 
-©2021<a href=\"https://t.me/szteambots\"> sz Team Bots <sz/>✌️</a> 💐
 """
     await update.reply_photo(
                     photo=(random.choice(START_IMG)),
@@ -122,7 +107,7 @@ async def show_status_count(_, bot: Message):
         quote=True
     )       
     
-@sz.on_message(filters.command(["ping", f"ping@szimagebot"]))
+@sz.on_message(filters.command(["ping", f"ping@Hasindu_Image_Tool_BOT"]))
 async def ping(bot, update):
     await AddUserToDatabase(bot, update)
     FSub = await ForceSub(bot, update)
