@@ -45,8 +45,8 @@ async def start(bot, update):
 📊 <b>Users</b> : {total_users}
 
 """
-    await update.reply_photo(
-                    photo=(random.choice(START_IMG)),
+    await update.reply_sticker(
+                    sticker=(random.choice(START STICKER)),
                     reply_markup=START_BTN,
                     caption=START_TEXT,
                     parse_mode="Html")
